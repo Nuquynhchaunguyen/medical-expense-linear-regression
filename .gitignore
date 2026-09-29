@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.pytest_cache/
+# Peer validation is submitted privately to Canvas, never to GitHub.
+[Pp]eer_[Vv]alidation*
+[Vv]alidation_[Ff]orm*
+private_submission/

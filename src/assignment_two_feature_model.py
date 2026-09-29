@@ -221,6 +221,7 @@ REPORT_PATH = (
     / "assignment_results.csv"
 )
 
+REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
 results.to_csv(REPORT_PATH, index=False)
 
 print(f"\nResults saved to: {REPORT_PATH}")

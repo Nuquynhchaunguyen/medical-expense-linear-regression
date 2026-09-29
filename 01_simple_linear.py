@@ -16,6 +16,8 @@ CSV_PATH = PROJECT_DATA_DIR / "insurance.csv"
 
 def ensure_local_dataset() -> Path:
 	"""Download from kagglehub cache and keep a project-local copy."""
+	if CSV_PATH.exists():
+		return PROJECT_DATA_DIR
 	cached_path = Path(kagglehub.dataset_download(DATASET_ID))
 
 	if PROJECT_DATA_DIR.exists():
